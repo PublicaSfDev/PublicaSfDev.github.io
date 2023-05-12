@@ -1,0 +1,10 @@
+<button onclick="redirect()"> Go To Page 2 </button>
+<script>
+function redirect()
+{
+    var currentUrl = window.location.href;
+    var parts = currentUrl.split("/");
+    var param = parts[parts.length() -  1];
+    window.location.hef = page2_url + "/" + param;
+}
+</script>
