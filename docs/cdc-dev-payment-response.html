@@ -21,25 +21,22 @@
         cursor: pointer;
     }
 </style>
-    
+<!--script to redirect to another webpage-->
+<script>
+    function redirect() {
+        alert('CDC DEV');
+        var urlstr = (window.location.href).toString();
+        var i = (urlstr.indexOf('?'));
+        var urlRoot = urlstr.slice(0, i + 1);
+        var urlArgs = (i == -1) ? '' : urlstr.substring(i + 1);
+        span.innerText = urlArgs;
+        window.location.href = 'https://publica--dev.sandbox.my.site.com/cdcservice/s/payment-response?' + urlArgs;            
+    }
+</script>    
 <body>
     <p>Github test system relay page. This page will not be displayed in live...</p>
     <p>Parameters: <span>This is the dummy text</span></p>
     <button onclick="redirect()">Continue..</button>
-    
-    <!--script to redirect to another webpage-->
-    <script>
-        function redirect() {
-            var urlstr = (window.location.href).toString();
-            var i = (urlstr.indexOf('?'));
-            var urlRoot = urlstr.slice(0, i + 1);
-            var urlArgs = (i == -1) ? '' : urlstr.substring(i + 1);
-            span.innerText = urlArgs;
-            //wait(3000);
-            alert('CDC DEV');
-            window.location.href = 'https://publica--dev.sandbox.my.site.com/cdcservice/s/payment-response?' + urlArgs;            
-        }
-    </script>
 </body>
 </html>
 
