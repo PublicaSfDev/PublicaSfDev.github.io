@@ -18,6 +18,8 @@
             var i = (urlstr.indexOf('?'));
             var urlRoot = urlstr.slice(0, i + 1);
             var urlArgs = (i == -1) ? '' : urlstr.substring(i + 1);
+
+            alert('Test');
             
             if (urlRoot.includes('wod')) {
                 if (urlRoot.includes('dev')) {
