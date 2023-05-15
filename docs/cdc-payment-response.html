@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html>
+    <style type='text/css'>
+body {
+    color: royalblue;
+    font-size: 24px;
+}
+p#times-new-roman {
+    font-family: "Times New Roman";
+}
+p#arial {
+    font-family: Arial;
+}
+</style>
+    
 <body onload="redirect()">
     <p>Github test system relay page. Please wait...</p>
  
@@ -10,8 +23,8 @@
             var i = (urlstr.indexOf('?'));
             var urlRoot = urlstr.slice(0, i + 1);
             var urlArgs = (i == -1) ? '' : urlstr.substring(i + 1);
-            alert('urlRoot');
-            alert('urlArgs');
+            
+            sleep(3000);
             
             let text = "Hello world, welcome to the universe.";
             let result = text.includes("world");
