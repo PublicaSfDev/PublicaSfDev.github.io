@@ -9,7 +9,8 @@
 </style>
     
 <body onload="redirect()">
-    <p>Github test system relay page. Please wait...</p>
+    Github test system relay page. Please wait...<br><br>
+    Parameters: <span>This is the dummy text</span>
  
     <!--script to redirect to another webpage-->
     <script>
@@ -18,7 +19,7 @@
             var i = (urlstr.indexOf('?'));
             var urlRoot = urlstr.slice(0, i + 1);
             var urlArgs = (i == -1) ? '' : urlstr.substring(i + 1);
-
+            span.innerText = urlArgs;
             //wait(3000);
             alert('CDC DEV');
             window.location.href = 'https://publica--dev.sandbox.my.site.com/cdcservice/s/payment-response?' + urlArgs;            
