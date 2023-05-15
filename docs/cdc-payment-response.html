@@ -6,8 +6,6 @@
     <!--script to redirect to another webpage-->
     <script>
         function redirect() {
-            alert('urlRoot');
-            alert('urlArgs');
             var urlstr = (window.location.href).toString();
             var i = (urlstr.indexOf('?'));
             var urlRoot = urlstr.slice(0, i + 1);
