@@ -19,8 +19,8 @@
             var urlRoot = urlstr.slice(0, i + 1);
             var urlArgs = (i == -1) ? '' : urlstr.substring(i + 1);
 
-            sleep(3000);
-            alert('Sleep ended');
+            wait(3000);
+            alert('Wait ended');
             
             if (urlRoot.includes('uat')) {
                 if (urlRoot.includes('wod')) {
