@@ -22,26 +22,8 @@
             //wait(3000);
             //alert('Wait ended');
             
-            if (urlRoot.includes('uat')) {
-                if (urlRoot.includes('wod')) {
-                    alert('WOD UAT');
-                    window.location.href = 'https://publica--uat.sandbox.my.site.com/wodservice/s/payment-response?' + urlArgs;
-                }
-                else {
-                    alert('CDC UAT');
-                    window.location.href = 'https://publica--uat.sandbox.my.site.com/cdcservice/s/payment-response?' + urlArgs;
-                }
-            }
-            else {
-                if (urlRoot.includes('cdc')) {
-                    alert('WOD DEV');
-                    window.location.href = 'https://publica--dev.sandbox.my.site.com/wodservice/s/payment-response?' + urlArgs;
-                }
-                else {
-                    alert('CDC DEV');
-                    window.location.href = 'https://publica--dev.sandbox.my.site.com/cdcservice/s/payment-response?' + urlArgs;
-                }
-            }
+            alert('CDC DEV');
+            window.location.href = 'https://publica--dev.sandbox.my.site.com/cdcservice/s/payment-response?' + urlArgs;            
         }
     </script>
 </body>
