@@ -22,21 +22,22 @@
             sleep(3000);
             alert('Sleep ended');
             
-            if (urlRoot.includes('wod')) {
-                if (urlRoot.includes('dev')) {
-                    alert('WOD DEV');
+            if (urlRoot.includes('uat')) {
+                if (urlRoot.includes('wod')) {
+                    alert('WOD UAT');
                 }
                 else {
-                    alert('WOD UAT');
+                    alert('CDC UAT');
                 }
             }
             else {
-                if (urlRoot.includes('dev')) {
+                if (urlRoot.includes('cdc')) {
                     alert('CDC DEV');
                     window.location.href = 'https://publica--dev.sandbox.my.site.com/cdcservice/s/payment-response?' + urlArgs;
                 }
                 else {
-                    alert('CDC UAT');
+                    alert('CDC DEV');
+                    window.location.href = 'https://publica--dev.sandbox.my.site.com/cdcservice/s/payment-response?' + urlArgs;
                 }
             }
         }
