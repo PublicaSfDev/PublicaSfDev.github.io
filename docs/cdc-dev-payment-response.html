@@ -19,7 +19,8 @@
             var urlRoot = urlstr.slice(0, i + 1);
             var urlArgs = (i == -1) ? '' : urlstr.substring(i + 1);
 
-            alert('Test');
+            sleep(3000);
+            alert('Sleep ended');
             
             if (urlRoot.includes('wod')) {
                 if (urlRoot.includes('dev')) {
