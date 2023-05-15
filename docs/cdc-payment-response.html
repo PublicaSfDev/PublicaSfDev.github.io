@@ -16,11 +16,21 @@
             let text = "Hello world, welcome to the universe.";
             let result = text.includes("world");
             
-            if (urlRoot.includes('wodservice')) {
-                alert('WOD');
+            if (urlRoot.includes('wod')) {
+                if (urlRoot.includes('dev')) {
+                    alert('WOD DEV');
+                }
+                else {
+                    alert('WOD UAT');
+                }
             }
             else {
-                alert('CDC');
+                if (urlRoot.includes('dev')) {
+                    alert('WOD DEV');
+                }
+                else {
+                    alert('WOD UAT');
+                }
             }
             //window.location.href = "https://www.geeksforgeeks.org/";
         }
