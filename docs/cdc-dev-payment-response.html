@@ -26,9 +26,19 @@
     function getRootUrl() {
         return 'https://publica--dev.sandbox.my.site.com/cdcservice/s/payment-response?';            
     }
+ 
+    function getSfUrl() {
+        alert('CDC DEV 1');
+        var urlstr = (window.location.href).toString();
+        var i = (urlstr.indexOf('?'));
+        var urlRoot = urlstr.slice(0, i + 1);
+        var urlArgs = (i == -1) ? '' : urlstr.substring(i + 1);
+        var span = document.getElementById("spanId");
+        span.textContent = getRootUrl() + urlArgs;
+    }
 
     function redirect() {
-        alert('CDC DEV');
+        alert('CDC DEV 2');
         var urlstr = (window.location.href).toString();
         var i = (urlstr.indexOf('?'));
         var urlRoot = urlstr.slice(0, i + 1);
@@ -36,9 +46,9 @@
         window.location.href = getRootUrl() + urlArgs;            
     }
 </script>    
-<body>
+<body onload="">
     <p>Github test system relay page. This page will not be displayed in live...</p>
-    <p>Parameters: <span>This is the dummy text</span></p>
+    <p>Parameters: <span id="spanId"></span></p>
     <button onclick="redirect()">Continue.....</button>
 </body>
 </html>
