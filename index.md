@@ -5,6 +5,6 @@
 
 ### UAT Chat Bot test pages
 * [CDC UAT Chatbot Page](/docs/uatcdcchatbot.html)
-
+* [WOD UAT Chatbot Page](/docs/uatwodchatbot.html)
 
 [Edit Site](https://github.com/PublicaSfDev/PublicaSfDev.github.io)
