@@ -8,4 +8,7 @@
 * [FOD UAT Chatbot Page](/docs/uatfodchatbot.html)
 * [WOD UAT Chatbot Page](/docs/uatwodchatbot.html)
 
+* [CDC TMP Chatbot Page](/docs/tmpcdcchatbot.html)
+
+
 [Edit Site](https://github.com/PublicaSfDev/PublicaSfDev.github.io)
