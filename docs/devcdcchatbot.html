@@ -25,6 +25,28 @@
       .ftrText {
       background-color: #123899;
       }
+	   /* Added By Ben 04/04/2024 */
+	   
+	.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu {
+    	margin-left: 40px !important;
+    	width: auto !important;
+		max-width:50% !important;
+	}
+	
+	.headerAnnouncement[lwc-56vbshdpqil] {
+		background-color:#16866c !important; 
+	}
+	   
+	/*media queries for small devices*/
+       @media screen and (max-width: 678px) {
+
+           .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu {
+               margin-left: 10px !important;
+               width: auto !important;
+               max-width: 100% !important;
+           }
+       }	
+/* End Of Ben's Additions*/
    </style>
    <body>
          <div class="hdrDiv"><span style="font-family:Arial, sans-serif; font-size:45px;color:white"><strong>Cotswold District Council (DEV)</strong></span></div>
@@ -79,6 +101,12 @@
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
+		// Added By Ben to Fix width & Height - 04/04/2024
+		embedded_svc.settings.widgetHeight = "90%";
+		embedded_svc.settings.widgetWidth = "70%";
+		// End of Ben's ammendments
+
+		
 		embedded_svc.init(
 			'https://publica--dev.sandbox.my.salesforce.com',
 			'https://publica--dev.sandbox.my.salesforce-sites.com/',
