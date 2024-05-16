@@ -144,7 +144,6 @@
 		embedded_svc.settings.widgetHeight = "90%";
 		embedded_svc.settings.widgetWidth = "70%";
 		// End of Ben's ammendments
-
 		
 		embedded_svc.init(
 			'https://publica--dev.sandbox.my.salesforce.com',
@@ -165,7 +164,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://publica--dev.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://publica--int.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
