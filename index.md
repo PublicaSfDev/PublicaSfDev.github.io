@@ -3,11 +3,17 @@
 * [FOD DEV Chatbot Page](/docs/devfodchatbot.html)
 * [WOD DEV Chatbot Page](/docs/devwodchatbot.html)
 
-### UAT Chat Bot test pages
+### INT Chat Bot test pages
+* [CDC INT Chatbot Page](/docs/intcdcchatbot.html)
+* [FOD INT Chatbot Page](/docs/intfodchatbot.html)
+* [WOD INT Chatbot Page](/docs/intwodchatbot.html)
+
+* ### UAT Chat Bot test pages
 * [CDC UAT Chatbot Page](/docs/uatcdcchatbot.html)
 * [FOD UAT Chatbot Page](/docs/uatfodchatbot.html)
 * [WOD UAT Chatbot Page](/docs/uatwodchatbot.html)
 
+### Temp
 * [CDC TMP Chatbot Page](/docs/tmpcdcchatbot.html)
 
 
