@@ -117,6 +117,10 @@
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
+		//Next two lines added to initESW() function in order to force a dummy value in to the Case.Subject field 2020-06-18-Guy-Taylor
+               	embedded_svc.settings.extraPrechatFormDetails = [{"label": "Subject", "value": "Chat Placeholder Subject", "displayToAgent": false}];
+               	embedded_svc.settings.extraPrechatInfo = [{"entityFieldMaps": [{"doCreate": true, "doFind": false, "fieldName": "Subject", "isExactMatch": false, "label": "Subject"}], "entityName": "Case"}];
+			
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
@@ -125,7 +129,7 @@
 
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
-
+		
 		// Settings for Chat
 		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
 			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
