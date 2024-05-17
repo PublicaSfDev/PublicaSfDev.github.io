@@ -13,7 +13,7 @@
 * [FOD UAT Chatbot Page](/docs/uatfodchatbot.html)
 * [WOD UAT Chatbot Page](/docs/uatwodchatbot.html)
 
-### Temp
+### TMP
 * [CDC TMP Chatbot Page](/docs/tmpcdcchatbot.html)
 
 
