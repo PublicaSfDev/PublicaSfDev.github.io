@@ -8,7 +8,7 @@
 * [FOD INT Chatbot Page](/docs/intfodchatbot2.html)
 * [WOD INT Chatbot Page](/docs/intwodchatbot.html)
 
-* ### UAT Chat Bot test pages
+### UAT Chat Bot test pages
 * [CDC UAT Chatbot Page](/docs/uatcdcchatbot.html)
 * [FOD UAT Chatbot Page](/docs/uatfodchatbot.html)
 * [WOD UAT Chatbot Page](/docs/uatwodchatbot.html)
