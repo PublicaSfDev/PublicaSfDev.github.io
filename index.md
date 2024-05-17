@@ -4,8 +4,8 @@
 * [WOD DEV Chatbot Page](/docs/devwodchatbot.html)
 
 ### INT Chat Bot test pages
-* [CDC INT Chatbot Page](/docs/intcdcchatbot.html)
-* [FOD INT Chatbot Page](/docs/intfodchatbot.html)
+* [CDC INT Chatbot Page](/docs/intcdcchatbot2.html)
+* [FOD INT Chatbot Page](/docs/intfodchatbot2.html)
 * [WOD INT Chatbot Page](/docs/intwodchatbot.html)
 
 * ### UAT Chat Bot test pages
