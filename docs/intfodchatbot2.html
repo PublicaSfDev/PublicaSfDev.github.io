@@ -66,52 +66,73 @@
 
 
 <style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #017ac2;
+		font-family: "Arial", sans-serif;    
+    		border: 2px solid #fff;
+    		border-radius: 5px 5px 0px 0px;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #005290;
+	}
 
-	/* New */
-    .embeddedServiceHelpButton .helpButton .uiButton {
-        background-color: #00663c !Important;
-        font-family: "Arial", sans-serif;
-        border: 2px solid #fff;
-        border-radius: 5px 5px 0px 0px;
-    }
+		/* Ben Additions */
+	
+	.embeddedServiceSidebarButton
+	{
+		background-color: #12649a !Important;
+		font-family: "Arial", sans-serif; 
+		border: 2px solid #fff !important;
+    		border-radius: 5px;
+		box-shadow: 0 2px 0 #002d18 !important;
+		margin: 5px 0 !important;
+	}
+	.embeddedServiceSidebarButton.uiButton--inverse 
+	{
+		color: #12649a !important;
+		background-color:#fbfafa !important;
+		border: 1px solid #efeaea !important;
+	}
 
-        .embeddedServiceHelpButton .helpButton .uiButton:focus {
-            outline: 1px solid #005290;
-        }
+	.embeddedServiceSidebarButton.uiButton--inverse .label {
+    		color: #12649a !important;
+		box-shadow: none !important;
+	}
+	.embeddedServiceSidebarMinimizedDefaultUI.newMessage, .embeddedServiceSidebarMinimizedDefaultUI.idleTimeout
+	{
+		background-color:#16866c !important;
+		border: 1px solid #efeaea !important;
+		color: #36156e !important;
+	}
+	.chatHeaderBranding {
+        	border-bottom: 5px solid #123899 !important;
+	}
+	.embeddedServiceLiveAgentStateChat .endChatContainer {
+	    	padding: 0 0 20px 38px !important;
+	}
+   /* Added By Ben 04/04/2024 */
+	   
+	.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu {
+    	margin-left: 40px !important;
+    	width: auto !important;
+		max-width:50% !important;
+	}
+	
+	.headerAnnouncement[lwc-56vbshdpqil] {
+		background-color:#017ac2 !important; 
+	}
+	   
+	/*media queries for small devices*/
+       @media screen and (max-width: 678px) {
 
-    .embeddedServiceSidebarButton {
-        background-color: #007042 !Important;
-        font-family: "Arial", sans-serif;
-        border: 2px solid #fff !important;
-        border-radius: 5px;
-        box-shadow: 0 2px 0 #002d18 !important;
-        margin: 5px 0 !important;
-    }
-
-        .embeddedServiceSidebarButton.uiButton--inverse {
-            color: #007042 !important;
-            background-color: #fbfafa !important;
-            border: 1px solid #efeaea !important;
-        }
-
-            .embeddedServiceSidebarButton.uiButton--inverse .label {
-                color: #007042 !important;
-                box-shadow: none !important;
-            }
-
-    .embeddedServiceSidebarMinimizedDefaultUI.newMessage, .embeddedServiceSidebarMinimizedDefaultUI.idleTimeout {
-        background-color: #7c2f53 !important;
-        border: 1px solid #efeaea !important;
-        color: #36156e !important;
-    }
-
-    .chatHeaderBranding {
-        border-bottom: 5px solid #7c2f53 !important;
-    }
-
-    .embeddedServiceLiveAgentStateChat .endChatContainer {
-        padding: 0 0 20px 38px !important;
-    }
+           .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu {
+               margin-left: 10px !important;
+               width: auto !important;
+               max-width: 100% !important;
+           }
+       }	
+/* End Of Ben's Additions*/
+	/* End of Bens Additions */
 </style>
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
