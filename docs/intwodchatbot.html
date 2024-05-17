@@ -26,24 +26,6 @@
       .ftrText {
       background-color: #123899;
       }
-      /* Added By Ben 04/04/2024 */
-      .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu {
-      margin-left: 40px !important;
-      width: auto !important;
-      max-width:50% !important;
-      }
-      .headerAnnouncement[lwc-56vbshdpqil] {
-      background-color:#16866c !important; 
-      }
-      /*media queries for small devices*/
-      @media screen and (max-width: 678px) {
-      .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu {
-      margin-left: 10px !important;
-      width: auto !important;
-      max-width: 100% !important;
-      }
-      /* End Of Ben's Additions*/
-      }
    </style>
    <body>
       <div class="hdrDiv"><span style="font-family:Arial, sans-serif; font-size:45px;color:white"><strong>West Oxfordshire District Council (INT)</strong></span></div>
@@ -92,12 +74,32 @@
          border: 1px solid #efeaea !important;
          color: #36156e !important;
          }
-         .chatHeaderBranding {
-         border-bottom: 5px solid #16866c !important;
-         }
-         .embeddedServiceLiveAgentStateChat .endChatContainer {
-         padding: 0 0 20px 38px !important;
-         }
+        .chatHeaderBranding {
+        border-bottom: 5px solid #16866c !important;
+        }
+        .embeddedServiceLiveAgentStateChat .endChatContainer {
+        padding: 0 0 20px 38px !important;
+        }
+	      
+	/* Added By Ben 04/04/2024 */
+      	.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu {
+      	margin-left: 40px !important;
+      	width: auto !important;
+      	max-width:50% !important;
+      	}
+      	.headerAnnouncement[lwc-56vbshdpqil] {
+      	background-color:#16866c !important; 
+      	}
+      	/*media queries for small devices*/
+      	@media screen and (max-width: 678px) {
+      	.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu {
+      	margin-left: 10px !important;
+      	width: auto !important;
+      	max-width: 100% !important;
+      	}
+      	/* End Of Ben's Additions*/
+      }
+
       </style>
       <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
       <script type='text/javascript'>
