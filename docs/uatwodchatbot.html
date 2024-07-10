@@ -138,6 +138,10 @@
 
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
+		
+		//Next two lines added in order to fix width & height field 2024-04-04-Ben-Ebeling
+		embedded_svc.settings.widgetHeight = "90%";
+		embedded_svc.settings.widgetWidth = "70%";            
 
 		embedded_svc.init(
 			'https://publica--uat.sandbox.my.salesforce.com',
