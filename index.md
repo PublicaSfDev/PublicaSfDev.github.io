@@ -13,8 +13,10 @@
 * [FOD UAT Chatbot Page](/docs/uatfodchatbot.html)
 * [WOD UAT Chatbot Page](/docs/uatwodchatbot.html)
 
-### TMP
-* [CDC TMP Chatbot Page](/docs/tmpcdcchatbot.html)
+### LIVE Chat Bot test pages
+* [CDC LIVE Chatbot Page](/docs/livecdcchatbot.html)
+* [FOD LIVE Chatbot Page](/docs/livefodchatbot.html)
+* [WOD LIVE Chatbot Page](/docs/livewodchatbot.html)
 
 
 [Edit Site](https://github.com/PublicaSfDev/PublicaSfDev.github.io)
