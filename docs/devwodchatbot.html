@@ -1,108 +1,155 @@
-<html>
-   <head>
-      <title>West Oxfordshire District Council Chat Bot Dummy Page</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-   </head>
-   <style>
-      /*Styles relating to test page components*/	
-      .hdrDiv {
-      background-color: #36156e;
-      margin: 0px;
-      padding: 4px 128px 4px 128px;
-      }
-      .ftrDiv {
-      background-color: #16866c;
-      margin: 0px;
-      padding: 4px;
-      }
-      .contDiv {
-      background-color: #FFFFFF;
-      margin: 0px;
-      padding: 32px 128px 512px 128px;
-      }
-      .hdrText {
-      background-color: #017AC2;
-      }
-      .ftrText {
-      background-color: #123899;
-      }
-   </style>
-   <body>
-      <div class="hdrDiv"><span style="font-family:Arial, sans-serif; font-size:45px;color:white"><strong>West Oxfordshire District Council (DEVGT)</strong></span></div>
-      <div class="ftrDiv"></div>
-      <div class="contDiv">
-         <span style="font-family:Arial, sans-serif; font-size:18px;color:grey">WOD DEVGT Org Chat Bot Dummy Page . . .</span>
-      </div>
-      <div class="ftrDiv">
-         <br><span style="font-family:Arial, sans-serif; font-size:25px;color:white">Find out more</span><br>
-         <br>
-         <hr>
-         <br><span style="font-family:Arial, sans-serif; font-size:15px;color:white">Privacy statement</span><br><br>
-      </div>
-      <div class="hdrDiv"></div>
-      <style type='text/css'>
-	 /*Styles relating to Salesforce components*/     
-         .embeddedServiceHelpButton .helpButton .uiButton {
-         background-color: #36156e !Important;
-         font-family: "Arial", sans-serif; border: 2px solid #fff;
-         border-radius: 5px 5px 0px 0px;
-         }
-         .embeddedServiceHelpButton .helpButton .uiButton:focus {
-         outline: 1px solid #005290;
-         }.embeddedServiceSidebarButton
-         {
-         background-color: #36156e !Important;
-         font-family: "Arial", sans-serif; 
-         border: 2px solid #fff !important;
-         border-radius: 5px;
-         box-shadow: 0 2px 0 #002d18 !important;
-         margin: 5px 0 !important;
-         }
-         .embeddedServiceSidebarButton.uiButton--inverse 
-         {
-         color: #36156e !important;
-         background-color:#fbfafa !important;
-         border: 1px solid #efeaea !important;
-         }
-         .embeddedServiceSidebarButton.uiButton--inverse .label {
-         color: #36156e !important;
-         box-shadow: none !important;
-         }
-         .embeddedServiceSidebarMinimizedDefaultUI.newMessage, .embeddedServiceSidebarMinimizedDefaultUI.idleTimeout
-         {
-         background-color:#16866c !important;
-         border: 1px solid #efeaea !important;
-         color: #36156e !important;
-         }
-        .chatHeaderBranding {
-        border-bottom: 5px solid #16866c !important;
-        }
-        .embeddedServiceLiveAgentStateChat .endChatContainer {
-        padding: 0 0 20px 38px !important;
-        }
-	      
-	/* Added By Ben 04/04/2024 */
-      	.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu {
-      	margin-left: 40px !important;
-      	width: auto !important;
-      	max-width:50% !important;
-      	}
-      	.headerAnnouncement[lwc-56vbshdpqil] {
-      	background-color:#16866c !important; 
-      	}
-      	/*media queries for small devices*/
-      	@media screen and (max-width: 678px) {
-      	.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu {
-      	margin-left: 10px !important;
-      	width: auto !important;
-      	max-width: 100% !important;
-      	}
-      	/* End Of Ben's Additions*/
-      }
+  <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <head>
+      <title>Test Messaging | Salesforce</title>
+      <apex:slds />
+      <style type="text/css">
+            @font-face {
+                font-family: ITC Avant Garde;
+                src: url(https://a.sfdcstatic.com/shared/fonts/avant-garde/4c0a2f1e-8b66-47d8-8e7c-9b259c4d363f.woff2) format("woff2"),url(https://a.sfdcstatic.com/shared/fonts/avant-garde/f8c88707-ed03-43dd-aec9-29571c329bcc.woff) format("woff");
+                font-weight: 400
+            }
+            
+            body {
+                background: #EAF5FE;
+                font-family: system-ui;
+            }
+            
+            #bgImage {
+                min-height: 100%;
+                min-width: 1024px;
+                width: 100%;
+                height: auto;
+                position: fixed;
+                top: 350px;
+                left: -64px;
+                background-image: url(/projRes/ui-admin-success-components/img/easy-onboarding-bg.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: -99999;
+            }
+            #mainContainer {
+                margin-top: 34px;
+                margin-left: 34px;
+            }
+            
+            #bodyContainer {
+                margin-left: 30px;
+            }
+            
+            #bodyContainer h1 {
+                font-family: ITC Avant Garde;
+                font-weight: 600;
+                font-size: 48px;            
+                color: #032D60;
+            }
+            
+            #bodyContainer ol {
+                list-style: decimal;
+            }
+            
+            #bodyContainer ol li {
+                margin-left: 0px;
+                margin-bottom: 16px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #001639;
+            }
 
-      </style>
-	   
-<script type='text/javascript'>
+            #accordion {
+                background-color: #eee;
+                width: 75%;
+                cursor: pointer;
+                padding: 15px;
+                margin-top: 10px;
+                border: none;
+                border-radius: 10px;
+                text-align: left;
+                outline: none;
+                transition: 0.4s;
+            }
+
+            #accordion img {
+                display: inline;
+                width: 16px;
+                margin-right: 10px;
+            }
+
+            .active, #accordion:hover {
+                background-color: #ccc; 
+            }
+
+            #accordion .chevrondown {
+                display: none;
+            }
+
+            #accordion.active .chevronright {
+                display: none;
+            }
+
+            #accordion.active .chevrondown {
+                display: inline;
+            }
+
+            #videoDemoContainer {
+                margin: 20px 0px;
+                width: 330px;
+                height: 452px;
+                display: none;
+            }
+        </style>
+
+        <script type="text/javascript" async="true" src="https://play.vidyard.com/embed/v4.js"></script>
+    </head>
+    <body>
+      <div id="bgImage"></div>
+      <div id="mainContainer">
+          <div id="logoContainer">
+              <img id="logo" src="https://c1.sfdcstatic.com/content/dam/sfdc-docs/www/logos/logo-salesforce.svg" width="65px" alt="Salesforce logo" />
+          </div>
+          <div id="bodyContainer">
+              <h1>Test Your Messaging Deployment</h1>
+              <ol>
+                  <li>In the previous browser tab where you’re signed into Salesforce, open the agent console.</li>
+                  <li>In the Omni-Channel utility or sidebar, make yourself available to accept incoming messaging sessions.<br />
+                     <button id="accordion">
+                        <img class="chevronright" src="/apexpages/slds/latest/assets/icons/utility/chevronright_60.png"/>
+                        <img class="chevrondown" src="/apexpages/slds/latest/assets/icons/utility/chevrondown_60.png"/>
+                        Show Me Where
+                     </button>
+                     <div id="videoDemoContainer">
+                        <img
+                            style="display: block; max-width: 330px; max-height: 452px;"
+                            class="vidyard-player-embed"
+                            src="https://play.vidyard.com/6udN7LzkmqU8RgRvyoKDrS.jpg"
+                            data-uuid="6udN7LzkmqU8RgRvyoKDrS"
+                            data-v="4"
+                            data-type="inline"
+                            data-width="330"
+                            data-height="452"
+                        />
+                     </div></li>
+                  <li>In this tab, open the Messaging conversation window and send a message as a customer.</li>
+                  <li>In Salesforce, accept the messaging session and send a response.</li>
+                  <li>Chat back and forth, and then end the conversation.</li>
+              </ol>
+          </div>
+      </div>
+      <script>
+            var videoAccordion = document.getElementById("accordion");
+            videoAccordion.addEventListener("click", function() {
+            this.classList.toggle("active");
+
+            var videoContainer = this.nextElementSibling;
+            if (videoContainer.style.display === "block") {
+                videoContainer.style.display = "none";
+            } else {
+                videoContainer.style.display = "block";
+            }
+        });
+        </script>
+    
+      <script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
@@ -122,7 +169,5 @@
 </script>
 <script type='text/javascript' src='https://publica--devgt.sandbox.my.site.com/ESWWODMessage1727780339036/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
-
-	   
-   </body>
-</html>
+    </body>
+  </html>
