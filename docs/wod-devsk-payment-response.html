@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html>
+<style type='text/css'>
+    body {
+        color: #008CBA;
+        font-family: Arial;
+        font-size: 16px;
+        text-align: center;
+        margin: 64px 64px;
+    }
+    button {
+        background-color: #008CBA; 
+        border: none;
+        color: white;
+        padding: 16px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 16px 16px;
+        cursor: pointer;
+    }
+</style>
+<!--script to redirect to another webpage-->
+<script>
+    
+    function getRootUrl() {
+        return 'https://publica--devsk.sandbox.my.site.com/wodservice/s/payment-response?';            
+    }
+ 
+    function getSfUrl() {
+        var urlstr = (window.location.href).toString();
+        var i = (urlstr.indexOf('?'));
+        var urlRoot = urlstr.slice(0, i + 1);
+        var urlArgs = (i == -1) ? '' : urlstr.substring(i + 1);
+        var span = document.getElementById("spanId");
+        span.textContent = getRootUrl() + urlArgs;
+        return getRootUrl() + urlArgs;
+    }
+
+    function redirect() {
+        window.location.href = getSfUrl();
+    }
+    
+</script>    
+<body onload="getSfUrl()">
+    <p>Test system relay page. This page will not be displayed in live.</p>
+    <button onclick="redirect()">Continue</button>
+    <p><span id="spanId"></span></p>
+</body>
+</html>
 
